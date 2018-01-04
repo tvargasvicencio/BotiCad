@@ -1,6 +1,6 @@
 {
   "name": "BotiCad",
-  "app_id": "",
+  "app_id": "d2a2d661",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
