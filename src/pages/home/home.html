@@ -1,14 +1,40 @@
+<ion-nav [root]="rootPage"></ion-nav>
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      BotiCad
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-card>
+    <ion-list>
+      <button ion-item color="light" icon-right detail-none (click)="botiquin()">
+        Maternidad<br>
+        <small>Actualizado el 20/12/2017</small>
+        <ion-badge item-end color="danger" round>5 !</ion-badge>
+        <ion-icon name="arrow-dropright-circle" item-end></ion-icon></button>
+      <button ion-item color="light" icon-right detail-none (click)="botiquin()">
+        Partos<br>
+        <small>Actualizado el 10/12/2017</small>
+        <ion-badge item-end color="danger" round>2 !</ion-badge>
+        <ion-icon name="arrow-dropright-circle" item-end></ion-icon></button>
+      <button ion-item color="light" icon-right detail-none (click)="botiquin()">
+        Controlado<br>
+        <small>Actualizado el 02/01/2018</small>
+        <ion-icon name="arrow-dropright-circle" item-end></ion-icon></button>
+    </ion-list>
+  </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 style="text-align:center">
+        <button ion-button icon-right round>
+          Nuevo Botiquin
+          <ion-icon name="add"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
 </ion-content>
